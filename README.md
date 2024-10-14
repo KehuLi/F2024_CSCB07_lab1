@@ -1,4 +1,3 @@
-# b07lab1
-F2024_CSCB07_lab1
-# I Put Pineapple on Pizza
-# This is lab1 repository.
+##### F2024_CSCB07_lab1
+###### I created lab1 repository ver 1.0.0
+###### I changed the font size to h6.
