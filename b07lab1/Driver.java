@@ -17,8 +17,8 @@ public class Driver {
 		if(s.hasRoot(1))
 			System.out.println("1 is a root of s");
 		else
-			System.out.println("1 is not a root of s gwg");
-		
+			System.out.println("1 is not a root of s");
+		// (git branch lab2)
 	}
 	
 	
