@@ -1,34 +1,38 @@
-package b07lab1;
+package b07lab1_src;
 
 // 类名称: Polynomial
 public class Polynomial {
-	// 状态名称: coefficients
-	// 状态特征: array of double
+	// 属性(字段区)
+	// 属性名称: coefficients
+	// 属性特征: array of double
 	private double[] coefficients;
-
+	private int[] exponents;
 
 	// 构造函数(constructor):初始化类
 	public Polynomial() {
-		// 初始化类的coefficients为[0](题目要求)
+		// 初始化类的属性coefficients为[0](题目要求)
 	    // set the Polynomial to default value
 	    coefficients = new double[]{0};
+	    exponents = new int[]{0};
 	}
 
-	public Polynomial(double[] coefficients_input) {
+	public Polynomial(double[] coefficients_input, int[] exponents_input) {
+		// 将属性状态设置为获取的值
 		// set the Polynomial to the value given
 		this.coefficients = coefficients_input;
+		this.exponents = exponents_input;
 	}
 
 	// 方法add()
 	public Polynomial add(Polynomial other) {
 		// 确定多项式如何相加...
 		// 如果两个多项式长度不等，则返回值应以长的为准
-		
+	
 		// 找出MaxLength
 		int maxLength = Math.max(this.coefficients.length, other.coefficients.length);
 		// 创建长度为MaxLength的系数数组。
 		double[] coefficients_result = new double[maxLength];
-		
+	
 		// 开始相加...
 		// 需要遍历两个数组，一一相加，如果length到头了，补0，直到遍历完成
 		
